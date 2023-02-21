@@ -113,19 +113,15 @@ var random = Math.floor((Math.random() * 3) + 1);
 function applyDiscount(oPrice, dPercent){
     return oPrice - (oPrice * dPercent)
 }
-let oPrice = prompt("ababa");
-let dPercent = prompt ("ajdjsk");
+let oPrice = prompt("How much was the original price?");
+let dPercent = prompt ("How much is the discount?");
 
 
 console.log(applyDiscount(oPrice, dPercent ));
 let total = applyDiscount(oPrice,dPercent);
 
-alert("Your total after discount is " + "$" + total);
+alert("Your total after discount is " + "$" + total );
 
 
-// function newPrice (oPrice, discountAmount){
-//     return oPrice - discountAmount;
-// }
-// alert(newPrice(oPrice, discountAmount));
 
 
