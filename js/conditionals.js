@@ -25,17 +25,17 @@
 
 // function analyzeColor (color) {
 //     if (color=== "blue") {
-//         console.log("blue is the color of the ocean")
+//         return("blue is the color of the ocean")
 //     } else if (color=== "red") {
-//         console.log ("red is the color of the Golden Gate Bridge")
+//         return ("red is the color of the Golden Gate Bridge")
 //     } else if (color==="green"){
-//         console.log("green is the color of money")
+//         return("green is the color of money")
 //     } else{
-//         console.log("I dont know anything about " + color)
+//         return("I dont know anything about " + color)
 //     }
 //
 // }
-// analyzeColor("pink");
+// console.log(analyzeColor("blue"));
 
 
 // Don't change the next two lines!
