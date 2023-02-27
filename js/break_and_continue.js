@@ -19,5 +19,5 @@ for(let i = 1; i <50; i+=2) {
         continue;
     }
     console.log("Here is an odd number " + i);
-// }
+}
 
