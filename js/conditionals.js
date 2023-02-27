@@ -112,24 +112,24 @@
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-// function calculateTotal(luckyNumber, totalAmount) {
-//     if (luckyNumber === 0) {
-//         return("You dont receive a discount, your total amount today will be " + totalAmount)
-//     } else if (luckyNumber === 1) {
-//         return("You will get a 10% discount today, your total will be  " + Number(totalAmount -(.10 * totalAmount)));
-//     } else if (luckyNumber === 2) {
-//         return("You will get a 25% discount today, your total will be " + Number(totalAmount -(.25 * totalAmount)));
-//     } else if (luckyNumber === 3) {
-//         return("You will get a 35% discount today, your total will be " + Number(totalAmount - (.35 * totalAmount)));
-//     } else if (luckyNumber === 4) {
-//         return("You will get a 50% discount today, your total will be " + Number(totalAmount - (.50 * totalAmount)));
-//     } else if (luckyNumber === 5) {
-//         return("You will get a 100% discount today, your total will be $0.00 today!")
-//     } else {
-//         return("invalid entry");
-//     }
-//
-// }
+function calculateTotal(luckyNumber, totalAmount) {
+    if (luckyNumber === 0) {
+        return("You dont receive a discount, your total amount today will be " + totalAmount)
+    } else if (luckyNumber === 1) {
+        return("You will get a 10% discount today, your total will be  " + Number(totalAmount -(.10 * totalAmount)));
+    } else if (luckyNumber === 2) {
+        return("You will get a 25% discount today, your total will be " + Number(totalAmount -(.25 * totalAmount)));
+    } else if (luckyNumber === 3) {
+        return("You will get a 35% discount today, your total will be " + Number(totalAmount - (.35 * totalAmount)));
+    } else if (luckyNumber === 4) {
+        return("You will get a 50% discount today, your total will be " + Number(totalAmount - (.50 * totalAmount)));
+    } else if (luckyNumber === 5) {
+        return("You will get a 100% discount today, your total will be $0.00 today!")
+    } else {
+        return("invalid entry");
+    }
+
+}
 // console.log(calculateTotal(5, 100));
 /**
  * TODO:
@@ -140,10 +140,10 @@
  * price before the discount was, and what their price after the discount is.
  */
 // // Generate a random number between 0 and 6
-// let luckyNumber = Math.floor(Math.random() * 6);
-//
-// let totalBill = prompt("What is your bill total?");
-// alert("Your lucky number is " + luckyNumber + ". Your price before the discount was " + totalBill + "." + " After your discount your total is " + calculateTotal(luckyNumber, totalBill));
+let luckyNumber = Math.floor(Math.random() * 6);
+
+let totalBill = prompt("What is your bill total?");
+alert("Your lucky number is " + luckyNumber + ". Your price before the discount was " + totalBill + "." + calculateTotal(luckyNumber, totalBill));
 
 /**
  * TODO:
@@ -163,35 +163,59 @@
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-confirm("Would you like to enter a number?");
-let userInputNumber =Number(prompt("Enter a number"));
+// confirm("Would you like to enter a number?");
+// let userInputNumber =Number(prompt("Enter a number"));
+//
+// if (isNaN(userInputNumber)) {
+//     alert("invalid entry, try again");
+// } else if(userInputNumber % 2 === 0 && !isNaN(userInputNumber)) {
+//     alert("The number is even");
+//     alert((userInputNumber) + 100);
+//     if(userInputNumber> 0) {
+//         alert("The number is positive");
+//     } else {
+//         alert("The number is negative");
+//     }
+// }
+// else if (userInputNumber %2 !==0 && !isNaN(userInputNumber)){
+//     alert("The number is odd");
+//     alert((userInputNumber) + 100);
+//     if(userInputNumber> 0) {
+//         alert("The number is positive");
+//     } else {
+//         alert("The number is negative");
+//     }
+//
+// }
 
-if (isNaN(userInputNumber)) {
-    alert("invalid entry, try again");
-} else if(userInputNumber % 2 === 0 && !isNaN(userInputNumber)) {
-    alert("The number is even");
-    alert((userInputNumber) + 100);
-    if(userInputNumber> 0) {
-        alert("The number is positive");
-    } else {
-        alert("The number is negative");
+        //Refactoring//
+let userConfirm = confirm("Would you like to confirm");
+if(userConfirm) {
+    let userNum = parseFloat(prompt("Enter a number"));
+    alert(evenOdd(userNum));
+    alert(add100(userNum));
+    alert(posNeg(userNum));
+}
+
+function evenOdd(number){
+    if (number % 2 ===0) {
+        return "Is an even number";
+    }else{
+        return "Odd Number";
     }
 }
-else if (userInputNumber %2 !==0 && !isNaN(userInputNumber)){
-    alert("The number is odd");
-    alert((userInputNumber) + 100);
-    if(userInputNumber> 0) {
-        alert("The number is positive");
-    } else {
-        alert("The number is negative");
-    }
 
+function add100(number){
+    return number + 100
 }
 
+function posNeg(number) {
+    if (number > 0) {
+        return "Number is positive";
+    }else (number < 0)
+        return "Number is negative";
 
-
-
-
+}
 
 
 
