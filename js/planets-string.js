@@ -18,7 +18,7 @@
     // //  * Create a string with <br> tags between each planet. console.log() your
     // //  * results. Why might this be useful?
     //
-    //  let planetsStringNew = planetsArray.join("<br>");
+     let planetsStringNew = planetsArray.join("<br>");
 
 
     // * BONUS:
@@ -33,4 +33,7 @@
 console.log(planetString1);
 
     document.write(planetString1)
+
+
+
 })();
