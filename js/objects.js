@@ -26,10 +26,10 @@ let person = {
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-person.sayhello = function(){
-    return ("Hello from "+ this.firstName +" " +this.lastName + " !");
+person.sayHello = function(){
+    return "Hello from " + person.firstName +  " " +person.lastName +" !"
 }
-    console.log(person.sayhello());
+    console.log(person.sayHello());
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -52,17 +52,15 @@ person.sayhello = function(){
         {name: 'George',
             amount: 320},
     ];
-    shoppers.forEach(function(shoppers) {
-        let initialAmount = shoppers.amount;
-        let discount = shoppers.amount * .12;
-        let finalCost = initialAmount - discount;
-
-        if (initialAmount >= 200) {
-            console.log(shoppers.name + " does receive a discount, his total today will be "+ finalCost);
-        } else {
-            console.log((shoppers.name + " does not receive a discount, his total today will be " + shoppers.amount));
-        }
-    })
+shoppers.forEach(function(shoppers){
+    let totalBought = shoppers.amount;
+    let discountPrice = shoppers.amount - (shoppers.amount * .12);
+     if(shoppers.amount > 200){
+         console.log(shoppers.name + " will receive a 12% discount today, you total will be " + discountPrice);
+     }else{
+         console.log(shoppers.name + " will not receive a discount today, your total will be " + totalBought);
+     }
+})
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -123,11 +121,12 @@ let books = [
      *      ---
      *      ...
      */
-books.forEach(function(book,index,title) {
-    console.log("Book # "+ index )
-    console.log("Title: "+ book.title)
-    console.log("Author: "+ book.author.firstName + " " +book.author.lastName)
+books.forEach(function(books,index){
+    console.log("Book # " + index);
+    console.log("Title: "+ books.title);
+    console.log("Author: "+ books.author.firstName + " " +books.author.lastName);
 })
+    // let i=0; i <books.length;
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -138,9 +137,5 @@ books.forEach(function(book,index,title) {
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-books.createBook = function(title,author){
-
-}
-
 
 })();
