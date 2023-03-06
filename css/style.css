@@ -1,22 +1,33 @@
 #fancy-header{
     text-align: center;
-    color: cadetblue;
+    color: white;
     text-decoration: underline;
 }
 html {
     background-color: beige;
     background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-Minimalist-Background-Image.jpg") ;
+    background-size: contain;
+    background-repeat: repeat;
 }
+
+
 ul {
     list-style-type: square;
+    list-style-position: inside;
 }
 ol{
     list-style-type: upper-roman;
+    list-style-position: inside;
 }
+
 
 span{
     font-family: "Hiragino Mincho ProN" ;
-
+    text-align: center;
+    color: white;
+}
+ul,ol{
+    align-items: center;
 }
 
 
@@ -27,6 +38,12 @@ span{
 table{
     margin-left:auto;
     margin-right:auto;
+}
+#table{
+    text-decoration: underline;
+}
+table{
+    padding: -10px;
 }
 
 
@@ -50,4 +67,6 @@ a:active {
 }
 #qcheck{
     text-align: center;
+    color:black;
+    font-size:10px
 }
