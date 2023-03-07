@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+.message{
+    margin: 8px;
+    padding:8px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+
+}
+/*blue,green.yellow,red*/
+.message-info{
+    background-color: rgba(13, 43, 162, 0.29);
+    /*opacity: .5;*/
+    color: rgba(37, 38, 128, 0.83);
+    /*text-shadow: 0.03em 0 black;*/
+
+
+}
+.message-success{
+    background-color: rgba(144, 238, 144, 0.55);
+    /*opacity: .5;*/
+    color: rgb(28, 114, 28);
+    /*text-shadow: 0.03em 0 black;*/
+
+
+}
+.message-warning{
+    background-color: rgba(234, 234, 81, 0.56);
+    /*opacity: .5;*/
+    color: #9b9b0a;
+    /*text-shadow: 0.03em 0 black;*/
+
+
+
+}
+.message-error{
+    background-color: rgba(240, 128, 128, 0.6);
+    opacity: 1;
+    color: rgba(255, 0, 0, 0.61);
+    text-shadow: 0.03em 0 black;
+
+/*bonus*/
+
+/*.message-info {*/
+/*    background-color: var(--bg-info)*/
+/*}*/
+/*!*}*!*/
+/*:root {*/
+/*    --bg-info: lightblue;*/
+/*    --txt-info: darkblue;*/
+/*    --bg-sucess: lightgreen;*/
+/*    --txt-sucess: darkgreen;*/
+/*    --bg-warning: lightyellow;*/
+/*    --txt-warning:gold;*/
+/*}*/
