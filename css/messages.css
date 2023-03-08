@@ -38,11 +38,12 @@ body, html {
 
 
 }
-.message-error{
+.message-error {
     background-color: rgba(240, 128, 128, 0.6);
     opacity: 1;
     color: rgba(255, 0, 0, 0.61);
     text-shadow: 0.03em 0 black;
+}
 
 /*bonus*/
 
