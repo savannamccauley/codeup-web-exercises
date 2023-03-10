@@ -79,7 +79,8 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) h3 {
-    flex-grow: 3;
+    flex-grow: 1;
+    /*background-color: blue;*/
     /*align-self: end;*/
     /*justify-content: flex-end;*/
     /* enter needed declarations here */
