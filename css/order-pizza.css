@@ -1,0 +1,30 @@
+.d-flex{
+    padding-right:800px;
+}
+.d-flex, button{
+    width:100%;
+}
+.pizza-img {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin:auto;
+    width:80%;
+}
+.welcome-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xxx-large;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.52);
+    width: 100%;
+}
+/*li{*/
+/*    margin:20px;*/
+/*}*/
+
+svg {
+    float:right;
+}
