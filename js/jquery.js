@@ -1,7 +1,15 @@
-$('li').css('font-size','20px');
-$('li, p , li').css('color', 'yellow');
+$('h1').click(function(){
+    $(this).css("background-color", "pink")
+})
+$('p').dblclick(function(){
+    $(this).css("font-size","18px");
+})
 
-let alertHeader = $('h1').html();
-alert(alertHeader)
+$('li').hover(
+    function() {
+        $(this).css("color", "pink");
+    },
+    function(){
+        $(this).css("color", "black");
 
-
+})

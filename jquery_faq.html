@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery-FAQ</title>
+    <style>
+        .invisible{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<p>National Park FAQ:</p>
+
+<dl>
+    <dt>1.What government agency oversees the National Park Service?</dt>
+    <dd class="invisible">
+        The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the department's Assistant Secretary for Fish, Wildlife and Parks.
+    </dd>
+
+    <dt>2.How many people visit the national parks?</dt>
+    <dd class="invisible">
+        Total recreation visitors to the national parks in 2021: 297,115,406.
+    </dd>
+    <dt>3.Can I bring my pet to a national park?</dt>
+    <dd class="invisible">
+        Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in some lodging facilities. Learn more about pets in parks.
+    </dd>
+    <dt>4.What are concessions?</dt>
+    <dd class="invisible">
+        Concessioners provide park visitors with lodging, transportation, food services, shops, guiding, and other services.
+    </dd>
+    <dt>5.Who Manages America’s National Parks?</dt>
+    <dd class="invisible">
+        The national parks are managed by the National Park Service (NPS), which also oversees numerous national monuments, historic sites, memorials, historical parks, lakeshores and seashores.
+    </dd>
+    <dt>6.How Many National Parks Are There?</dt>
+    <dd class="invisible">
+        Currently, there are 63 national parks in the United States.
+    </dd>
+    <dt>7.How Many National Park Service Sites Are There?</dt>
+    <dd class="invisible">
+        National parks are just one of many designations in the National Park System. In total, there are 423 National Park Service units
+    </dd>
+    <dt>8.What Does the National Park Service Logo Mean?</dt>
+    <dd class="invisible">
+        The logo of the National Park Service represents the different aspects of America’s National Park System.
+    </dd>
+    <dt>9. How Many People Visit America’s National Parks Every Year?</dt>
+    <dd class="invisible">
+        In 2021, the total number of recreation visitors in the entire National Park System was 297,115,406.
+    </dd>
+    <dt>10.What Is the Most Visited National Park?</dt>
+    <dd class="invisible">
+        The most visited national park is Great Smoky Mountains National Park in North Carolina and Tennessee, which welcomed 14.1 million visitors in 2021.
+    </dd>
+
+
+</dl>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    let invis = $(".invisible");
+
+    invis.click(function(){
+        $(this).toggleClass('invisible')
+    })
+    para.click(function (){
+        $(this).toggleClass('content');
+    })
+
+</script>
+</body>
+</html>
