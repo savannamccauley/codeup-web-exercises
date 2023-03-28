@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<form>
+    <label for="input"> Enter Code</label>
+    <input id="input" class="input" type="input">
+</form>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+    "use strict"
+
+    let konami = [38,38,40,40,37,39,37,39,66,65,13];
+    let userInput = [];
+    let counter = 0;
+
+
+    $(document).keyup(function(event){
+        console.log(event.keyCode);
+        userInput.push(event.keyCode)
+
+    if(konami[counter] !==userInput[counter]){
+        alert('Wrong!');
+    }
+    else if (konami[konami.length-1]=== userInput[konami.length-1]){
+        alert ('correct, granted 30 lives!');
+    }else{
+    counter ++;
+    }
+
+    });
+
+</script>
+</body>
+</html>
+
+<!--↑ ↑ ↓ ↓ ← → ← → b a enter-->
+
+
+
+
+
