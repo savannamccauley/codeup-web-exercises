@@ -35,7 +35,8 @@
 // (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-    function loadStuff() {
+    let html = ''
+function loadStuff() {
         $.ajax("data/inventory.json").done(function (data) {
             console.log(data)
             let inventoryData = '';
@@ -50,10 +51,15 @@
             $('#insertProducts').append(inventoryData);
         })
     }
+
+
+
 $(document).ready(function(){
     loadStuff();
     $("#refreshBtn").click(function(){
-        $('#insertProducts').append(inventoryData);
+        html = '';
+        $('#insertProducts').html(html);
+        loadStuff();
 
     })
 })
