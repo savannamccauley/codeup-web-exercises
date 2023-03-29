@@ -57,14 +57,39 @@
     <dd class="invisible">
         The most visited national park is Great Smoky Mountains National Park in North Carolina and Tennessee, which welcomed 14.1 million visitors in 2021.
     </dd>
-
-
 </dl>
+<button id ="toggleBtn">Button</button>
+
+
+<h3 id="first">Abilene State Park</h3>
+<ul>
+    <li>Abilene Park is open year round</li>
+    <li>Busy season is March</li>
+    <li>Park is surrounded by low limestone hills</li>
+    <li>There is a 1930s swimming pool</li>
+</ul>
+
+<h3 id="second">Davis Mountain</h3>
+<ul>
+    <li>The lodge was built in the early 1930s</li>
+    <li>Scrub Jays, white wing doves and rock squirrels are the most common wildlife seen</li>
+    <li>Indian Lodge has 39 rooms</li>
+    <li>Located in Jeff Davis County</li>
+</ul>
+
+<h3 id="third">Enchanted Rock</h3>
+<ul>
+    <li>Hiking enchanted rock is like climbing a 40-story buildings</li>
+    <li>Each dome at the park is a part of a 62-square-mile batholith</li>
+    <li>The Texas State Capitol was built from the same stone that makes uo enchanted rock</li>
+    <li>Its haunting history gave the rock its "Enchanted" name.
+    </li>
+</ul>
 
 
 
 
-<button id ="toggleBtn">toggle data</button>
+<button id ="btn">Button</button>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
@@ -74,6 +99,28 @@
 $('dt').click(function(){
     $(this).css("background", "pink ")
 })
+
+//     ------------------------------------------
+$('#btn').click(function() {
+    $('ul').each(function () {
+        $(this).children().last()
+            .css('background-color', 'yellow');
+    })
+})
+// -----------------------------------------------
+
+$('h3').click(function(){
+    $(this).next().css('font-weight', 'bold');
+})
+
+// ------------------------------------------------
+
+$('li').click(function(){
+    $(this).parent().children().first().css("color", "blue");
+})
+
+
+
 </script>
 </body>
 </html>
